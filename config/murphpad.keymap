@@ -24,6 +24,22 @@
     status = "okay";
 };
 
+// Macros
+/ {
+macros {
+    zed_em_kay: zed_em_kay {
+        compatible = "zmk,behavior-macro";
+        wait-ms = <10>;
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LSHFT>
+            , <&macro_tap &kp Z &kp M &kp K>
+            , <&macro_release &kp LSHFT>
+            ;
+        };
+    };
+};
+
 /* Combo Definitions*/
 / {
     combos {
@@ -66,7 +82,7 @@
                 &rgb_ug RGB_TOG  &kp KP_NUM   &kp KP_DIVIDE   &kp KP_MULTIPLY   &kp KP_MINUS
                 &rgb_ug RGB_EFF  &kp KP_N7    &kp KP_N8       &kp KP_N9         &kp KP_PLUS
                 &kp C_MUTE       &kp KP_N4    &kp KP_N5       &kp KP_N6         &trans
-                &mo FN           &kp KP_N1    &kp KP_N2       &kp KP_N3         &kp KP_ENTER
+                &mo FN           &zed_em_kay    &kp KP_N2       &kp KP_N3         &kp KP_ENTER
                 &kp BSPC         &kp KP_N0    &trans          &kp KP_DOT        &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
