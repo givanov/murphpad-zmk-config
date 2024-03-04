@@ -46,7 +46,7 @@
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp S &kp S &kp A &kp D &kp A &kp D>,
+                <&kp S &kp W &kp A &kp D &kp A &kp D>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
@@ -61,7 +61,7 @@
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp A &kp W &kp S &kp S &kp D>,
+                <&kp D &kp W &kp S &kp S &kp D>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
@@ -81,6 +81,36 @@
                 <&kp LCTRL>;
 
             label = "EAGLE_AIRSTRIKE";
+        };
+
+        reenforce: reenforce {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <50>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp W &kp S &kp A &kp D &kp W>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "REENFORCE";
+        };
+
+        resuply: resuply {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <50>;
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp S &kp S &kp W &kp D>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "RESUPLY";
         };
     };
 };
@@ -130,7 +160,7 @@
 &bt BT_CLR       &kp F1            &kp F2           &kp F3           &kp F4
 &rgb_ug RGB_TOG  &kp KP_NUM        &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS
 &rgb_ug RGB_EFF  &railgun          &shield_pack     &kp KP_N9        &kp KP_PLUS
-&kp C_MUTE       &kp KP_N4         &kp KP_N5        &kp KP_N6        &trans
+&kp C_MUTE       &reenforce        &resuply         &kp KP_N6        &trans
 &mo FN           &eagle_airstrike  &orbital_cannon  &kp KP_N3        &kp KP_ENTER
 &kp BSPC         &kp KP_N0         &trans           &kp KP_DOT       &trans
             >;
