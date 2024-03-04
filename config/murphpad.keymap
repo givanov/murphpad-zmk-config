@@ -27,7 +27,7 @@
     macros {
         railgun: zed_em_kay {
             compatible = "zmk,behavior-macro";
-            wait-ms = <100>;
+            wait-ms = <75>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -40,7 +40,7 @@
 
         shield_pack: shield_pack {
             compatible = "zmk,behavior-macro";
-            wait-ms = <100>;
+            wait-ms = <75>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -55,7 +55,7 @@
 
         orbital_cannon: orbital_cannon {
             compatible = "zmk,behavior-macro";
-            wait-ms = <100>;
+            wait-ms = <75>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -70,7 +70,7 @@
 
         eagle_airstrike: eagle_airstrike {
             compatible = "zmk,behavior-macro";
-            wait-ms = <100>;
+            wait-ms = <75>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -85,7 +85,7 @@
 
         reenforce: reenforce {
             compatible = "zmk,behavior-macro";
-            wait-ms = <100>;
+            wait-ms = <75>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -100,7 +100,7 @@
 
         resuply: resuply {
             compatible = "zmk,behavior-macro";
-            wait-ms = <100>;
+            wait-ms = <75>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
