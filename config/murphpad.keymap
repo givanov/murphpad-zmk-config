@@ -105,7 +105,7 @@
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp W &kp S &kp S &kp A &kp W>,
+                <&kp W &kp S &kp D &kp A &kp W>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
